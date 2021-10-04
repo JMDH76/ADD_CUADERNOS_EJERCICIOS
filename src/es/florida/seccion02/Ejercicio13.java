@@ -8,13 +8,14 @@ import java.io.IOException;
 public class Ejercicio13 {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		System.out.print("12. Crea un programa que dado un fichero de texto, lea y muestre su contenido línea a línea.");
+		System.out.print("13. Modifica el programa anterior para que acepte como parámetros de entrada un número \r\n"
+				+ "    que indique la velocidad a la que se muestran las líneas\r\n");
 		
 		String nombrefichero = args[0];
 		int velocidad = Integer.parseInt(args[1]);
 		
 		File ficheroOriginal = new File(nombrefichero);
-		System.out.println("Archivo: " + ficheroOriginal + "\n");
+		System.out.println("\nArchivo: " + ficheroOriginal + "\n");
 		
 		FileReader fr = new FileReader(ficheroOriginal);
 		BufferedReader br = new BufferedReader(fr);
