@@ -5,12 +5,13 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Ejercicio12 {
+public class Ejercicio13 {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		System.out.print("12. Crea un programa que dado un fichero de texto, lea y muestre su contenido línea a línea.");
 		
 		String nombrefichero = args[0];
+		int velocidad = Integer.parseInt(args[1]);
 		
 		File ficheroOriginal = new File(nombrefichero);
 		System.out.println("Archivo: " + ficheroOriginal + "\n");
@@ -24,9 +25,11 @@ public class Ejercicio12 {
 			
 			System.out.println(linea);
 			linea = br.readLine();
+			Thread.sleep(velocidad);
 		}
 		br.close();
 		fr.close();
 	}
 
-}
+	}
+
