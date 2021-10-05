@@ -21,8 +21,8 @@ public class Ejercicio14 {
 		String extension = nombrefichero.substring(index);
 		String nombrecopia = nombreficherosinextension + "_copia" + extension; 
 		
-		System.out.println("\nArchivo original: " + nombrefichero);
-		System.out.println("\nArchivo copia: " + nombrecopia);
+		System.out.print("\nArchivo original:	" + nombrefichero);
+		System.out.println("\nArchivo copia:		" + nombrecopia);
 		
 		File ficheroOriginal = new File(nombrefichero);
 		FileReader fr = new FileReader(ficheroOriginal);
@@ -43,6 +43,6 @@ public class Ejercicio14 {
 		br.close();		
 		fw.close();
 		fr.close();
-		System.out.println("\nProceso finalizado");
+		System.out.println("\nProceso de copia finalizado.    " + ficheroOriginal + " --> " + ficheroCopia);
 	}
 }
