@@ -21,14 +21,13 @@ public class Ejercicio18 {
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document document;
-
-			document = dBuilder.parse(new File("src\\es\\florida\\seccion03\\zapateria.xml"));
+			Document document = dBuilder.parse(new File("src\\es\\florida\\seccion03\\zapateria.xml"));
+			
 			Element raiz = document.getDocumentElement(); // declaramos el nodo raiz
 			System.out.println("Contenido XML de " + raiz.getNodeName());
 
-			NodeList nodelist = document.getElementsByTagName("zapato"); // nodo principal que contiene la informacion d
-																			// ecada objeto zapato
+			NodeList nodelist = document.getElementsByTagName("zapato"); // nodo principal que contiene la informacion 
+																			//de cada objeto zapato
 			for (int i = 0; i < nodelist.getLength(); i++) {
 
 				Node node = nodelist.item(i);
@@ -40,7 +39,7 @@ public class Ejercicio18 {
 				System.out.println("	Tipo:	" + eElement.getElementsByTagName("tipo").item(0).getTextContent());
 				System.out.println("	Marca:	" + eElement.getElementsByTagName("marca").item(0).getTextContent());
 				System.out.println("	Modelo:	" + eElement.getElementsByTagName("modelo").item(0).getTextContent());
-				System.out.println("	olor" + eElement.getElementsByTagName("color").item(0).getTextContent());
+				System.out.println("	Color" + eElement.getElementsByTagName("color").item(0).getTextContent());
 				System.out.println("	Talla: " + eElement.getElementsByTagName("talla").item(0).getTextContent());
 				System.out.print("	Precio: " + eElement.getElementsByTagName("precio").item(0).getTextContent());
 			}
