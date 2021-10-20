@@ -14,7 +14,7 @@
 	
 	<zapato id = "2">
 		<tipo>Deportivo</tipo>
-		<marca>Nike</marca>
+		<marca marca = "pepito">Nike</marca>
 		<modelo>Air Jordan</modelo>
 		<color>Blanco - rojo</color>
 		<talla>45</talla>
@@ -25,7 +25,7 @@
 		<tipo>Deportivo</tipo>
 		<marca>Puma</marca>
 		<modelo>Classic</modelo>
-		<color>Balnco - mostaza</color>
+		<color>Blanco - mostaza</color>
 		<talla>42</talla>
 		<precio>59.99€</precio>		
 	</zapato>
@@ -34,7 +34,7 @@
 		<tipo>Bota</tipo>
 		<marca>Ugg</marca>
 		<modelo>Bailey</modelo>
-		<color>Marron-ante</color>
+		<color>Ante - Marron</color>
 		<talla>39</talla>
 		<precio>159.99€</precio>		
 	</zapato>
