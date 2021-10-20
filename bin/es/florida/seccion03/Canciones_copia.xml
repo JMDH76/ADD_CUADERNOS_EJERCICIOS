@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<canciones>
+    <cancion id="1">
+        <titulo>Un beso y una flor</titulo>
+        <artista>Nino Bravo</artista>
+        <anyo>1972</anyo>
+        <formato>MP3</formato>
+    </cancion>
+    <cancion id="2">
+        <titulo>Un jardin de rosas</titulo>
+        <artista>Duncan Dhu</artista>
+        <anyo>1984</anyo>
+        <formato>MP3</formato>
+    </cancion>
+    <cancion id="3">
+        <titulo>Losing my religion</titulo>
+        <artista>R.E.M.</artista>
+        <anyo>1991</anyo>
+        <formato>MP3</formato>
+    </cancion>
+    <cancion id="4">
+        <titulo>Viento</titulo>
+        <artista>La oreja de van Gogh</artista>
+        <anyo>2007</anyo>
+        <formato>wma</formato>
+    </cancion>
+    <cancion id="5">
+        <titulo>La cometa blanca</titulo>
+        <artista>Miliki</artista>
+        <anyo>1978</anyo>
+        <formato>lp</formato>
+    </cancion>
+</canciones>
