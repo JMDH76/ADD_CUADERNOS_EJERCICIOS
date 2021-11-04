@@ -5,6 +5,7 @@ public class Zapato {
 	String id, tipo, marca, modelo, color, talla, precio;
 
 	Zapato() {
+		
 	}
 
 	Zapato( String id, String tipo, String marca, String modelo, String color, String talla, String precio) {
