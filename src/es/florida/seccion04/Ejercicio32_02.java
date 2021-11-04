@@ -1,3 +1,6 @@
+/*32. Modifica los dos ejercicios anteriores para que pidan una confirmación del usuario antes de 
+pasar a realizar la acción.*/
+
 package es.florida.seccion04;
 
 import java.sql.Connection;
@@ -10,6 +13,7 @@ import java.util.Scanner;
 
 public class Ejercicio32_02 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		try {
@@ -29,23 +33,21 @@ public class Ejercicio32_02 {
 			PreparedStatement psBorrar = con
 					.prepareStatement("DELETE FROM zapatos WHERE id = " + id);
 			
-		
+			//Confirmacion del usuario
 			String confirmacion = "n";
 			System.out.print("\nConfirma que desea eliminar este artículo? (s/n) ");
 
 			while (!confirmacion.equals("s")) {
 				confirmacion = teclado.next();
-				
+				//Si confirma ejecutamos la sentencia SQL, si no nos salimos
 				if (confirmacion.toLowerCase().equals("s")) {
 					int resultadoBorrar = psBorrar.executeUpdate();
 					System.out.print("\nArticulo borrado correctamente.");
-
 				} else {
 					System.out.print("\nNo se ha borrado el articulo");
 					break;
 				}
 			}
-			
 			teclado.close();
 			con.close();
 
@@ -54,7 +56,11 @@ public class Ejercicio32_02 {
 		}
 	}
 	
-
+	/*METODO: filtroLinea(Connection con, int id)
+	 * ACTION: 	crea una sentencia SQL en la que filtramos por la id proporcionada y
+	 * crea un string con todos los datos de todas las columnas.
+	 * INPUT:	recibe Objeto Connection y la id seleccionada
+	 * OUTPUT:	devuelve un string montado con los datos de la linea filtrada */
 	public static String filtroLinea(Connection con, int id) throws SQLException {
 		
 		String linea="";
@@ -69,7 +75,10 @@ public class Ejercicio32_02 {
 		return linea;
 	}
 
-
+	/*Metodo ComprobarConexion()
+	 * Action: comprueba si se ha conectado con la BDD. Si la vble "con" es null es uqe no se ha conectado.
+	 * INPUT:	recibe el objeto Connection con.
+	 * OUTPUT:	Devuelve un mensaje con el resultado de l aconexion. */
 	public static void comprobarConexion(Connection con) {
 		if (!con.equals(null))
 			System.out.println("Conecxión realizada con éxito\n");
