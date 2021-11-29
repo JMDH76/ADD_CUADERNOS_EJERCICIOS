@@ -13,6 +13,7 @@ public class Ejercicio18 {
 			File f = new File("src\\es\\florida\\seccion03\\zapateria.xml");
 			FileReader fr = new FileReader(f, StandardCharsets.UTF_8);
 			BufferedReader br = new BufferedReader(fr);
+			
 			String linea = br.readLine();
 			while (linea != null) {
 				System.out.println(linea);

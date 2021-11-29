@@ -9,8 +9,8 @@ public class Ejercicio04 {
 		System.out.print(Color.green + "4. Realizar un programa que dado un directorio, compruebe si existe y devuelva \r\n"
 				+ "   un mensaje de confirmación si existe o una alerta en caso contrario.\n" + Color.reset);
 		
-		File directorio = new File(".\\src\\es\\florida\\seccion01\\Nueva carpeta");  	//Existe
-		//File directorio = new File(".\\sc\\es\\florida\\seccion01\\Nueva carpeta");	//No existe (para probarlo)
+		//File directorio = new File(".\\src\\es\\florida\\seccion01\\Nueva carpeta");  	//Existe
+		File directorio = new File(".\\sc\\es\\florida\\seccion01\\Nueva carpeta");	//No existe (para probarlo)
 		
 		System.out.println("\n" + existeDirectorio(directorio));
 		}

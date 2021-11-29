@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="no"?>
+<zapateria>
+    <zapato id="1">
+        <tipo>Casual</tipo>
+        <marca>Callahgan</marca>
+        <modelo>42800</modelo>
+        <color>Marron</color>
+        <talla>43</talla>
+        <precio>69.99€</precio>
+    </zapato>
+    <zapato id="2">
+        <tipo>Deportivo</tipo>
+        <marca>Nike</marca>
+        <modelo>Air Jordan</modelo>
+        <color>Blanco - rojo</color>
+        <talla>45</talla>
+        <precio>124.99€</precio>
+    </zapato>
+    <zapato id="3">
+        <tipo>Deportivo</tipo>
+        <marca>Puma</marca>
+        <modelo>Classic</modelo>
+        <color>Blanco - mostaza</color>
+        <talla>42</talla>
+        <precio>59.99€</precio>
+    </zapato>
+    <zapato id="4">
+        <tipo>Bota</tipo>
+        <marca>Ugg</marca>
+        <modelo>Bailey</modelo>
+        <color>Ante - Marron</color>
+        <talla>39</talla>
+        <precio>159.99€</precio>
+    </zapato>
+    <zapato id="5">
+        <tipo>dgfsa</tipo>
+        <marca>dfasg</marca>
+        <modelo>aert</modelo>
+        <color>wret</color>
+        <talla>wTE</talla>
+        <precio>R€</precio>
+    </zapato>
+</zapateria>

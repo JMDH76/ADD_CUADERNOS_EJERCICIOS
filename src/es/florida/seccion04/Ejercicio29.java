@@ -29,8 +29,7 @@ public class Ejercicio29 {
 			Scanner teclado = new Scanner(System.in);
 			System.out.println("Inserte un nuevo artículo:");
 
-			System.out.print("Tipo: ");
-			String tipo = teclado.next();
+			System.out.print("Tipo: "); String tipo = teclado.next();
 			System.out.print("Marca: ");
 			String marca = teclado.next();
 			System.out.print("Modelo: ");
@@ -45,6 +44,7 @@ public class Ejercicio29 {
 			// Preparamos la sentencia SQL antes d eejecutarla
 			PreparedStatement psInsertar = con.prepareStatement(
 					"INSERT INTO zapatos(tipo, marca, modelo, color, talla, precio) VALUES (?,?,?,?,?,?)");
+			
 			// No ponemos id porque es autoincrementado
 			psInsertar.setString(1, tipo); // El número es la posicion en la sentencia no en la BDD.
 			psInsertar.setString(2, marca);
@@ -80,7 +80,7 @@ public class Ejercicio29 {
 	 * OUTPUT:	Devuelve un mensaje con el resultado de l aconexion. */
 	public static void comprobarConexion(Connection con) {
 		if (!con.equals(null))
-			System.out.println("Conecxión realizada con éxito\n");
+			System.out.println("Conexión realizada con éxito\n");
 		else
 			System.err.println("Conexion Fallida");
 	}

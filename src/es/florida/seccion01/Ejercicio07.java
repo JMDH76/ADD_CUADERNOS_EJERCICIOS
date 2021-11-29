@@ -50,7 +50,7 @@ public class Ejercicio07 {
 	OUTPUT: muestra lista de todos los objetos del ArrayList	 */
 	public static void contenidoFiltrado(String ext, File directorio) {
 		
-		
+	
 		String[] listaArchivos = directorio.list(new FiltroExtension(ext));
 		for (String archivo : listaArchivos) {
 			System.out.println("		" + archivo);

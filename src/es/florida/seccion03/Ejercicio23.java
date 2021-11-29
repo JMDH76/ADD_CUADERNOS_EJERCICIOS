@@ -19,7 +19,7 @@ public class Ejercicio23 {
 		
 		int ultimoId = 0;
 		Zapato zapato;
-		ArrayList<Zapato> listazapatos = new ArrayList<Zapato>(); // Opcion con tamaño sin definir (ArrayList)
+		ArrayList<Zapato> listazapatos = new ArrayList<Zapato>(); 
 		
 		try {
 
@@ -99,10 +99,8 @@ public class Ejercicio23 {
 				System.out.println(zap.getToString());
 			}
 
-			
 		} catch ( IOException  e) {
 			e.printStackTrace();
 		}
-
 	}
 }

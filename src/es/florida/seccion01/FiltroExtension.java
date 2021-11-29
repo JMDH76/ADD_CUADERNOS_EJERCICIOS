@@ -8,7 +8,7 @@ public class FiltroExtension implements FilenameFilter{  //Interfaz de Ejercico0
 	//constructor
 	String extension;
 	
-	FiltroExtension (String extension) {
+	public FiltroExtension (String extension) {
 		this.extension = extension;
 	}
 	

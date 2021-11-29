@@ -22,7 +22,7 @@ public class Ejercicio26 {
 
 			// Comprueba si la conexion se ha realizado con exito
 			if (!con.equals(null))
-				System.out.println("Conecxión realizada con éxito");
+				System.out.println("Conexión realizada con éxito");
 			else
 				System.out.println("Conexion Fallida");
 

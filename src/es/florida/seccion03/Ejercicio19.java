@@ -15,6 +15,7 @@ public class Ejercicio19 {
 	public static void main(String[] args) {
 
 		try {
+			
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newDefaultInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document document = dBuilder.parse(new File("src\\es\\florida\\seccion03\\zapateria.xml"));
@@ -33,4 +34,4 @@ public class Ejercicio19 {
 			e.printStackTrace();
 		}
 	}
-}
+	}

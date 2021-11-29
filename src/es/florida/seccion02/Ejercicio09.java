@@ -21,7 +21,7 @@ public class Ejercicio09 {
 			FileReader fr = new FileReader(ficheroOriginal);
 			BufferedReader br = new BufferedReader(fr);
 			
-			int valor = fr.read();
+			int valor = br.read();
 			while (valor != -1) {
 				System.out.print((char) valor);
 				valor = br.read();

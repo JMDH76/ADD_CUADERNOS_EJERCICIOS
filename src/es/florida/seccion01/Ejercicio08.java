@@ -16,7 +16,7 @@ public class Ejercicio08 {
 				+ "   las acciones para ver que se realizan.\n" + Color.reset);
 		
 		//Asignamos el nombre de fichero a copiar como argumento y lo mostramos
-		String nombreFichero = args[0];
+		String nombreFichero = "fichero_01.txt";
 		System.out.println(Color.cyan + "Fichero original:	"+ Color.reset + nombreFichero );
 		
 		

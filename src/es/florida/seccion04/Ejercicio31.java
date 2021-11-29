@@ -67,7 +67,7 @@ public class Ejercicio31 {
 	 * OUTPUT:	Devuelve un mensaje con el resultado de l aconexion. */
 	public static void comprobarConexion(Connection con) {
 		if (!con.equals(null))
-			System.out.println("Conecxión realizada con éxito\n");
+			System.out.println("Conexión realizada con éxito\n");
 		else
 			System.err.println("Conexion Fallida");
 	}

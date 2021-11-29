@@ -15,8 +15,8 @@ public class Ejercicio11 {
 
 		try {
 
-			String nombrefichero = args[0];
-			int velocidad = Integer.parseInt(args[1]);
+			String nombrefichero = ("./src/es/florida/seccion01/Ejer07.txt");;
+			int velocidad = 200;
 			
 			File ficheroOriginal = new File(nombrefichero);
 			System.out.println("Archivo: " + ficheroOriginal + "\n");
@@ -25,7 +25,7 @@ public class Ejercicio11 {
 			BufferedReader br = new BufferedReader(fr);
 
 			int cont = 0;
-			int valor = fr.read();
+			int valor = br.read();
 			while (valor != -1) {
 				cont++;
 				Thread.sleep(velocidad);
@@ -47,6 +47,8 @@ public class Ejercicio11 {
 
 	}
 
+	
+	
 }
 
 

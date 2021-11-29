@@ -19,7 +19,6 @@ public class Zapato {
 		this.precio = precio;
 	}
 	
-	//ToDO geter y seter id
 	public String getId () {
 		return id;
 		}
